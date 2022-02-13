@@ -1,8 +1,5 @@
-import AWS from 'aws-sdk'
 import crypto from 'crypto'
 import config from '../config/index.js'
-
-AWS.config.update({ region: "us-east-2" })
 
 export const AwsService = ({ aws }) => {
     const sendMessageToQueue = async (params) => {
